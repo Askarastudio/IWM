@@ -1,0 +1,211 @@
+/* INSIA Work Monitor - Main Styles */
+
+:root {
+    --primary-color: #667eea;
+    --secondary-color: #764ba2;
+    --sidebar-bg: #2c3e50;
+    --sidebar-text: #ecf0f1;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background: var(--sidebar-bg);
+    color: var(--sidebar-text);
+    transition: all 0.3s;
+    min-height: 100vh;
+}
+
+.sidebar.active {
+    margin-left: -250px;
+}
+
+.sidebar-header {
+    padding: 20px;
+    background: #34495e;
+    text-align: center;
+}
+
+.sidebar-header h3 {
+    color: white;
+    font-weight: 600;
+}
+
+.sidebar ul.components {
+    padding: 20px 0;
+}
+
+.sidebar ul li {
+    padding: 10px 0;
+}
+
+.sidebar ul li a {
+    padding: 15px 25px;
+    font-size: 1.1em;
+    display: block;
+    color: var(--sidebar-text);
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li.active > a {
+    background: var(--primary-color);
+    color: white;
+}
+
+.sidebar ul li a i {
+    margin-right: 10px;
+}
+
+/* Content Styles */
+#content {
+    width: 100%;
+    padding: 0;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+/* Statistics Cards */
+.stat-card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.stat-card .card-body {
+    padding: 20px;
+}
+
+.stat-card h6 {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    opacity: 0.9;
+}
+
+.stat-card h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.stat-icon {
+    opacity: 0.3;
+}
+
+/* Table Styles */
+.table {
+    background: white;
+}
+
+.table thead {
+    background: #f8f9fa;
+}
+
+/* Button Styles */
+.btn {
+    border-radius: 5px;
+    padding: 8px 16px;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    border: none;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.card-header {
+    background: white;
+    border-bottom: 2px solid #f0f0f0;
+    padding: 15px 20px;
+    font-weight: 600;
+}
+
+/* Chart Placeholder */
+.chart-placeholder {
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Badge Styles */
+.badge {
+    padding: 5px 10px;
+    font-weight: 500;
+}
+
+/* Status Badges */
+.badge.bg-online {
+    background-color: #28a745 !important;
+}
+
+.badge.bg-offline {
+    background-color: #dc3545 !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .sidebar {
+        margin-left: -250px;
+    }
+    
+    .sidebar.active {
+        margin-left: 0;
+    }
+    
+    #sidebarCollapse span {
+        display: none;
+    }
+}
+
+/* List Group Custom */
+.list-group-item {
+    border: none;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 12px 15px;
+}
+
+.list-group-item:last-child {
+    border-bottom: none;
+}
+
+/* Loading Spinner */
+.spinner-border-sm {
+    width: 1rem;
+    height: 1rem;
+    border-width: 0.15em;
+}
+
+/* Modal Styles */
+.modal-header {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: white;
+}
+
+.modal-header .btn-close {
+    filter: invert(1);
+}
