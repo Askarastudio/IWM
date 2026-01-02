@@ -1,0 +1,9 @@
+{
+    "api_key": "REPLACE_WITH_YOUR_API_KEY_FROM_DASHBOARD",
+    "server_url": "http://localhost/backend",
+    "device_name": "PC-EXAMPLE",
+    "heartbeat_interval": 300,
+    "log_interval": 60,
+    "enable_usb_logging": false,
+    "enable_file_logging": false
+}

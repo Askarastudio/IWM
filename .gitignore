@@ -1,0 +1,70 @@
+# IWM .gitignore
+
+# Environment files
+.env
+.env.local
+.env.production
+
+# Agent config
+agent/config.json
+
+# Uploads and data
+uploads/
+screenshots/
+*.log
+
+# Logs
+logs/
+*.log
+error_log
+
+# Database backups
+*.sql
+*.sql.gz
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.bak
+*.swp
+*~
+
+# Dependencies (if using composer/npm in future)
+vendor/
+node_modules/
+package-lock.json
+composer.lock
+
+# Build files
+dist/
+build/
+
+# Cache
+cache/
+*.cache
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+
+# Testing
+coverage/
+.phpunit.result.cache
